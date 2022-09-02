@@ -1,0 +1,14 @@
+.fresh-Text-Col {
+  margin-bottom: 10px;
+}
+.apply-Store-Button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 10px;
+}

@@ -1,0 +1,47 @@
+.row-Detail-Page {
+  display: flex;
+  /* justify-content: space-around;  */
+  align-items: center;
+}
+.rs-Col {
+  border: 1px solid #e3e8e9;
+  height: 150px;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+.user-Image-Card-Col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.location-Time-Col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.make-Text-Col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.conidtion-Text-Col {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.seller-Col {
+  border: solid 1px #e3e8e9;
+  padding: 14px;
+}
+.chat-Button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  background-color: darkslategray;
+  color: white;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
