@@ -130,6 +130,7 @@ async function addUpload(userValue, file) {
     });
   }
 }
+
 // // Get My Adds
 async function getMyAdds() {
   const uid = auth.currentUser.uid;
@@ -142,6 +143,7 @@ async function getMyAdds() {
   });
   return data;
 }
+
 // Get Collection Adds
 async function getAdds() {
   const q = query(collection(db, "adds"));
@@ -155,6 +157,7 @@ async function getAdds() {
   return data;
 }
 
+// // Get Detail Data
 async function getAddDetail(id) {
   // const userid = auth.currentUser.uid;
   const docRef = doc(db, "adds", id);

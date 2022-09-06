@@ -45,3 +45,8 @@
   border-left: none;
   border-right: none;
 }
+.call-Icon-Main-Col{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

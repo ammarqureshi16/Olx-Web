@@ -10,6 +10,9 @@ import Olx from "../../Assets/Images/user.jpg";
 import { useSelector } from "react-redux";
 // import { AiOutlineShareAlt, AiOutlineHeart } from "react-icons/ai";
 import Button from "../../Components/Button/button";
+import { IoCallOutline } from "react-icons/io5";
+import { FiShare2 } from "react-icons/fi";
+import { AiOutlineHeart } from "react-icons/ai";
 
 export default function AddsDetail() {
   const params = useParams();
@@ -101,10 +104,23 @@ export default function AddsDetail() {
           <Col xs={12} sm={12} md={4} lg={4} xl={4}>
             <Row className="flex">
               <Col className="rs-Col" xs={11} sm={11} md={11} lg={11} xl={11}>
-                <Col xs={11} sm={11} md={6} lg={6} xl={6}>
+                <Col
+                  style={{ height: 120 }}
+                  xs={11}
+                  sm={11}
+                  md={6}
+                  lg={6}
+                  xl={6}
+                >
                   <h4>Rs : {price}</h4>
                   <p>{title}</p>
                 </Col>
+
+                {/* <Col style={{border:"solid green"}} xs={12} sm={12} md={6} lg={6} xl={6}>
+                <FiShare2 siz={20} />
+                <AiOutlineHeart  size={20} />
+                </Col> */}
+
                 <Col
                   className="location-Time-Col"
                   xs={12}
@@ -151,10 +167,28 @@ export default function AddsDetail() {
                 >
                   <button className="chat-Button">Chat with seller</button>
                 </Col>
-                {/* <Col className="flex" xs={11} sm={11} md={11} lg={11} xl={11}>
-                <p>** *** ****</p>
-                <a href="#">Show Number</a>
-                </Col> */}
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={12}
+                  xl={12}
+                  className="flex"
+                  style={{ margin: "10px" }}
+                >
+                  <Col
+                    className="call-Icon-Main-Col"
+                    xs={11}
+                    sm={11}
+                    md={8}
+                    lg={8}
+                    xl={8}
+                  >
+                    <IoCallOutline size={20} />
+                    <span>** *** ****</span>
+                    <a href="#">Show Number</a>
+                  </Col>
+                </Col>
               </Col>
               <Col xs={11} sm={11} md={11} lg={11} xl={11}>
                 <h6>ADD ID : {uid}</h6>
